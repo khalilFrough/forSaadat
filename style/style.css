@@ -1,0 +1,193 @@
+body{
+    background: rgba(214, 213, 213, 0.9);
+    margin: 0;
+    color: balck; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* this is like creating a div element in the DOM 
+like but i prefer doing with CSS which injects this picture in the DOM */
+
+.showcase::after{
+    content:'';
+    height: 100vh; 
+    width: 100%; 
+    background-image: url(../Media/1.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: block; 
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms; 
+}
+
+/* this is the opposite of showcase:: after class, while the mouse is over it 
+the backgroud picture goes back to normal */
+
+.showcase:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+    .content{
+        position: absolute; 
+      /* z-index is an atteribute, the hiehger its value the close it is to you ( to the screen)   */
+         z-index: 1;
+         top: 10%;
+         left: 50%;
+         margin-top: 105px; 
+         margin-left: -145px;
+         width: 300px; 
+         height:350px; 
+         text-align: center; 
+         transition: all 1000ms;  
+    }
+
+    /* .content .logo{
+        height: 180px; 
+        width: 180px; 
+    } */
+
+    .navbar-brand{
+        display: none;  
+    }
+    .nav-link{
+        color: white; 
+    }
+
+    .content .title{
+        font-size: 3.2rem; 
+        margin-top: 1rem; 
+        color: black; 
+
+    }
+    
+    .content .text{
+        line-height: 1.7; 
+        margin-top: 1rem; 
+        color: black; 
+    }
+
+    .container{
+        max-width: 960px; 
+        margin: auto;
+        overflow: hidden; 
+        padding: 4rem 1rem; 
+    }
+
+    .grid-3{
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;  
+    }
+
+    .center{
+        text-align: center; 
+        margin: auto; 
+    }
+
+    .bg-light{
+        background: #f4f4f4; 
+        color: #333;
+    }
+
+    .bg-dark{
+        background: #333; 
+        color: #f4f4f4;
+    }
+    .grid-2{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;  
+    }
+    footer{
+        padding:2.2rem; 
+    }
+    footer p{
+        margin:0px; 
+    }
+    /* styling the index page finishes here */
+
+
+    /* styling the about page starts here */
+
+    .card{
+        color:black;
+    }
+  
+    /* styling the about page finishes here */
+    
+
+    
+
+
+    /* smaller screens for ipad  */
+    @media (max-width: 560px) {
+        .showcase::after{
+            height: 50vh; 
+        }
+        .content{
+            top: 30%; 
+            margin-top: 5px; 
+        }
+        /* hides the logo in the middle of the page */
+        .content .logo{
+            display: none;  
+        }
+
+        .navbar-brand{
+            display: inline;   
+        }
+        .content .text{
+            display: none; 
+        }
+
+        .content .title{
+            
+            font-size: 2.2rem;
+        }
+
+        .grid-3,
+        .grid-2{
+            grid-template-columns: 1fr;
+        }
+        .services div{
+            border-bottom: #333 dashed 1px; 
+            padding: 1.2 rem 1rem; 
+        }
+
+        /* about page */
+        .about-info{
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1rem;
+            padding:0.5rem 0.5rem;
+        }
+        .jobs{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            text-align: center;
+            grid-gap: 0.5em;
+            margin:1rem;
+        }
+
+    }
+
+    /* landscape moode for ipads */
+
+    @media(max-height: 500px){
+        .content.title, 
+        .content.text{
+            display: none; 
+        }
+        content{
+            top: 0%; 
+        }
+    }
+    
