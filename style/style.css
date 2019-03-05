@@ -90,6 +90,11 @@ the backgroud picture goes back to normal */
     .center{
         text-align: center; 
         margin: auto; 
+        padding:0px;
+    }
+
+    .container.grid-3.center{
+        margin-top:2rem;
     }
 
     .bg-light{
@@ -104,7 +109,20 @@ the backgroud picture goes back to normal */
     .grid-2{
         display: grid; 
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;  
+        grid-gap: 10px;  
+    }
+
+    /* the cards picture zoom in hover */
+
+    .inner{
+        overflow: hidden;
+
+    }
+    .inner img{
+        transition: all  1.5s ease;
+    }
+    .inner:hover img{
+        transform: scale(1.5);
     }
     footer{
         padding:2.2rem; 
@@ -117,14 +135,30 @@ the backgroud picture goes back to normal */
 
     /* styling the about page starts here */
 
-    .card{
-        color:black;
+    .cat{
+        list-style: none;
+        padding:0px;
     }
   
     /* styling the about page finishes here */
     
+    /* styling the services page */
 
+    /* styling the services page finishes here */
     
+
+    /* styling the contact page starts here */
+    label{
+        margin-right:20px;
+    }
+    input{
+        width:20em;
+    }
+   .contact-btn{
+       background-color:rgba(128, 225, 255, 0.9);
+       border:1px solid black;
+   }
+   /* styling the contact page finishes here */
 
 
     /* smaller screens for ipad  */
@@ -140,7 +174,7 @@ the backgroud picture goes back to normal */
         .content .logo{
             display: none;  
         }
-
+        
         .navbar-brand{
             display: inline;   
         }
@@ -161,7 +195,7 @@ the backgroud picture goes back to normal */
             border-bottom: #333 dashed 1px; 
             padding: 1.2 rem 1rem; 
         }
-
+        
         /* about page */
         .about-info{
             display:grid;
