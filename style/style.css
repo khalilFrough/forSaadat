@@ -163,7 +163,7 @@ the backgroud picture goes back to normal */
 
 
     /* smaller screens for ipad  */
-    @media (max-width: 560px) {
+    @media (max-width: 575.98px) {
         .showcase::after{
             height: 50vh; 
         }
@@ -196,6 +196,12 @@ the backgroud picture goes back to normal */
             border-bottom: #333 dashed 1px; 
             padding: 1.2 rem 1rem; 
         }
+        iframe{
+            overflow: hidden;
+            width:320px;
+            height:300px;
+        }
+            
         
         /* about page */
         .about-info{
