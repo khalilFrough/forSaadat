@@ -21,7 +21,15 @@ like but i prefer doing with CSS which injects this picture in the DOM */
     -webkit-filter: blur(10px);
     transition: all 1000ms; 
 }
-
+#face{
+    color:white;
+}
+#insta{
+    color:white;
+}
+#twit{
+    color:white;
+}
 /* this is the opposite of showcase:: after class, while the mouse is over it 
 the backgroud picture goes back to normal */
 
@@ -196,10 +204,13 @@ the backgroud picture goes back to normal */
             border-bottom: #333 dashed 1px; 
             padding: 1.2 rem 1rem; 
         }
-        iframe{
-            overflow: hidden;
-            width:320px;
-            height:300px;
+        .card{
+            width:22rem;
+        }
+        .row{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            
         }
             
         
@@ -216,6 +227,11 @@ the backgroud picture goes back to normal */
             text-align: center;
             grid-gap: 0.5em;
             margin:1rem;
+        }
+        iframe{
+            overflow: hidden;
+            width:320px;
+            height:300px;
         }
 
     }
