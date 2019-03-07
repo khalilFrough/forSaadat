@@ -40,65 +40,43 @@
 
 
         <div class="container">
-            <div class="row">
-                  <div class="col-6 text-justify">
-                        <!-- start of the card -->
-        <div class="card shadow">
-            <div class="card-body">
-                 <!-- the form starts from here -->
-                 <div class="form">
-                    <form action="sendEmail.php" method="post">
-                       <p><span><label for="name">Name:</label></span> </p>
-                       <input class="input" type="text" name="name" id="name" onkeyup="nameValidation();" placeholder="eg. First Last" required>
-                       <p><span id="nameError"></span></p>
-                       <p><span><label for="phone">Phone:</label></span></p>
-                       <input class="input" type="text "name="phone"id="phone" onkeyup="phoneValidation();"placeholder="eg. 0450 442 424" required> 
-                       <p><span id="phoneError"></span></p>
-                       <p><span><label for="email">Email:</label></span></p>
-                       <input  class="input" type="email" name="email" onkeyup="emailValidation();" id="email"placeholder="your email please" required>
-                       <p><span id="emailError"></span></p>
-                       <p><span><label for="message">Message:</label></span></p>
-                       <textarea  name="message" onkeyup="messageValidation();" id="message" rows="10"cols="32"></textarea>
-                       <p><span id="msg"></span></p>
-                       <div class="submit-button">
-                          <p><input class="contact-btn"type="submit"name="submit" id="submit"value="submit"></p>
-                          <p>By pressing the submit button you will agree to our <span><a href="#">terms and policies</a></span></p>
-                       </div>
-                       
-                    </form>
-              </div>
+
+            <div class="jumbotron center contact">
+
+              <!-- form starts here -->
+              
+              <form action="sendEmail.php" method="post">
+                  <p><span><label for="name">Name:</label></span> </p>
+                  <input class="input" type="text" name="name" id="name" onkeyup="nameValidation();" placeholder="eg. First Last" required>
+                  <p><span id="nameError"></span></p>
+                  <p><span><label for="phone">Phone:</label></span></p>
+                  <input class="input" type="text "name="phone"id="phone" onkeyup="phoneValidation();"placeholder="eg. 0450 442 424" required> 
+                  <p><span id="phoneError"></span></p>
+                  <p><span><label for="email">Email:</label></span></p>
+                  <input  class="input" type="email" name="email" onkeyup="emailValidation();" id="email"placeholder="your email please" required>
+                  <p><span id="emailError"></span></p>
+                  <p><span><label for="message">Message:</label></span></p>
+                  <textarea  name="message" onkeyup="messageValidation();" id="message" rows="10"cols="32"></textarea>
+                  <p><span id="msg"></span></p>
+                  <div class="submit-button">
+                     <p><input class="contact-btn"type="submit"name="submit" id="submit"value="submit"></p>
+                     <p>By pressing the submit button you will agree to our <span><a href="#">terms and policies</a></span></p>
+                  </div>
+                  
+                </form>
+          
+
+
               <!-- form finishes here -->
-            </div>
-          </div>
-   <!-- end of the card -->
-                  </div>
-                  <div class="col-6">
-                      <!-- map starts here -->
-                      <div class="card">
-                          <div class="card-body shadow">
-                              <div class="map-address">
-                                  <h1>Our address and other contact detials: </h1>
-                                  <br><br><br>
-                                 
-                                  <div class="map">
-
-                                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402565.8637873003!2d144.32139118423234!3d-37.97606020334869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1551786581252" width="400" height="358" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                  </div>
-                                  <!-- map finishes here -->
-                                  <br><br>
-                                  <p>Saadat Saadat Contact Person:</p>
-                                  <p>contact No: 0412 455 455</p>
-                                  <p>Email address: <a href="mailto:exmaple@yahoo.com">example@yahoo.com</a> </p>
-                               </div>
-                          </div>
-                        </div>
-                      
-                         
-                      </div>
-                    <!-- map finishes here -->
-                  </div>
-
-            </div>
+                <div class="map">
+                  <h1>Our Address and Location</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402565.8637873003!2d144.32139118423234!3d-37.97606020334869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1551786581252" width="800" height="358" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <h5>Other Contact detials</h5>
+                    <p>Saadat Saadat:</p>
+                    <p>contact No: 0412 455 455</p>
+                    <p>Email address: <a href="mailto:s&g@info.com.au">s&g@info.com.au</a> </p>
+                </div>
+            </div>  
         </div>
 
        
